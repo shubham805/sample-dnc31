@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -28,6 +27,8 @@ namespace sample_dot_net_core_3._1.Controllers
         {
             var rng = new Random();
             bool db = true;
+            Console.WriteLine("\nTest App Request loggin");
+            Console.WriteLine("=========================================\n");
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
