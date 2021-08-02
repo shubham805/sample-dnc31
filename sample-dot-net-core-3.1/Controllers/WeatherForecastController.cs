@@ -27,11 +27,13 @@ namespace sample_dot_net_core_3._1.Controllers
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
+            bool db = true;
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
+                Summary = Summaries[rng.Next(Summaries.Length)],
+                db_connection = db
             })
             .ToArray();
         }
