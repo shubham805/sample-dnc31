@@ -27,6 +27,7 @@ namespace sample_dot_net_core_3._1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddApplicationInsightsTelemetry(Configuration["APPINSIGHTS_CONNECTIONSTRING"]);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

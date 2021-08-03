@@ -3,9 +3,12 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>sample_dot_net_core_3._1</RootNamespace>
+    <UserSecretsId>4835bdde-8d42-47ed-9137-29f45a0574a5</UserSecretsId>
+    <ApplicationInsightsResourceId>/subscriptions/2ed2fb46-b080-499c-a9e0-1df4fc61aa93/resourceGroups/dot-net-core-3.1-e2etest/providers/microsoft.insights/components/sample-dnc31-insight</ApplicationInsightsResourceId>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.15.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.8" />
   </ItemGroup>
