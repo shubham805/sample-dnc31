@@ -32,7 +32,7 @@ namespace sample_dot_net_core_3._1.Controllers
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
+                TemperatureC = rng.Next(-20, 56),
                 Summary = Summaries[rng.Next(Summaries.Length)],
                 db_connection = db
             })
